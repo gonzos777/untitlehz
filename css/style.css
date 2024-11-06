@@ -1,14 +1,18 @@
-div.con {
+* {
     padding: 0;
-    margin: auto;
-    width: 1200px;
-    height: 3000px;
+    margin: 0;
     box-sizing: border-box;
 }
 
 a {
     display: inline-block;
 }
+
+header {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -19,17 +23,16 @@ header .container {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(70, 163, 88, 0.5);
-    margin-bottom: 10px;
-    margin-top: 30px;
 }
 
 header nav ul {
     display: flex;
     gap: 50px;
+    height: 40px;
 }
 
 header .logo {
-    margin-bottom: 17px;
+    margin-bottom: 30px;
 }
 
 header nav a {
@@ -50,9 +53,9 @@ header .login {
     background: #46a358;
     border-radius: 6px;
     display: flex;
-    align-items: center;
     transition: 0.4s;
-    margin-bottom: 18px;
+    margin-bottom: 29px;
+    align-items: center;
 }
 
 header .login:hover {
@@ -64,7 +67,7 @@ header .login:before {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("../img/Logout.svg");
+    background-image: url("../img/Logout.svg");
     margin-right: 4px;
 }
 
@@ -74,7 +77,7 @@ header nav li:after {
     content: "";
     background-color: #46a358;
     height: 3px;
-    margin-top: 30px;
+    margin-top: 33px;
     transition: 0.4s;
 }
 
@@ -82,111 +85,75 @@ header nav li:hover:after {
     width: 100%;
 }
 .banner {
-    position: relative;
-    margin: auto;
-    padding: 0;
-    opacity:0.5;
-    width: 1200px;
+    display: flex;
+    justify-content: space-between;
     height: 450px;
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
 }
-.bannerh {
-    margin: 0;
-    padding: 0;
-    font-family: "Cera Pro", sans-serif;
+.bannerleft {
+    width: 610px;
+    height: 450px;
+    padding-left: 40px;
+    padding-top: 68px;
+    margin-right: 93px;
+}
+.bannerh3 {
+    font-family: Cera Pro, sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: black;
-    position: relative;
-    top: 68px;
-    left: 43px;
+    color: #3d3d3d;
     border: 1px solid #000;
-    width: 240px;
+    width: 220px;
     height: 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #fff;
-    opacity: 1.0;
+    margin-bottom: 7px;
+    margin-left: 3px;
 }
-.bannerhh {
-    font-family: "Cera Pro", sans-serif;
+.bannerh1 {
+    font-family: Cera Pro, sans-serif;
     font-weight: 700;
     font-size: 65px;
     line-height: 100%;
     text-transform: uppercase;
     color: #3d3d3d;
-    width: 650px;
-    height: 140px;
-    position: relative;
-    top: 91px;
-    left: 40px;
-    margin: 0;
-    padding: 0;
-    opacity: 1.0;
+    margin-bottom: 5px;
 }
 span.letter {
     color: #46a358;
-    margin: 0;
-    padding: 0;
-    opacity: 1.0;
 }
 .bannerp {
-    position: relative;
-    top:100px;
-    left: 43px;
+    font-family: Cera Pro, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
     width: 557px;
-    height: 45px;
-    margin-top: 0;
-    opacity: 1.0;
+    margin-left: 3px;
+    margin-bottom: 44px;
 }
 .bannerButton {
-    position: absolute;
-    left: 41px;
-    top: 335px;
+    display: inline-block;
+    text-decoration: none;
     border-radius: 6px;
     width: 140px;
-    height: 28px;
+    height: 40px;
     background: #46a358;
     font-family: "Cera Pro", sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 12px;
-    opacity: 1.0;
-}
-.bannerButton {
-    text-decoration: none;
-    font-family: "Cera Pro", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
-    display: inline-block;
-    opacity: 1.0;
-}
-.bannerimg1 {
-    position: relative;
-    left: 693px;
-    top: -220px;
-    width: 507px;
-    height: 450px;
-    background: url("../img/01 1.svg");
-    opacity: 1.0;
-}
-.bannerimg2 {
-    position: absolute;
-    left: 748px;
-    top: 282px;
-    width: 135px;
-    height: 135px;
-    background: url("../img/01 2.svg");
-    opacity: 1.0;
+    padding-top: 13px;
+    text-align: center;
 }
 .bannerButton:active {
     border: 2px solid white;
     color: red;
-    opacity: 1.0;
+}
+.section1 {
+    margin-bottom: 46px;
 }
